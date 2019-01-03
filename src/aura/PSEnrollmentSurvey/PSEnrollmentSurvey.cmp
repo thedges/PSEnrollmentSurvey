@@ -1,0 +1,36 @@
+<aura:component controller="PSEnrollmentSurveyController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="surveyList" type="List" />
+    <aura:attribute name="surveyName" type="String" />
+    <aura:attribute name="surveyId" type="String" />
+    <aura:attribute name="contactId" type="String" />
+    <aura:attribute name="enrollmentId" type="String" />
+    <aura:attribute name="networkId" type="String" default="0DB1U0000000wjHWAQ"/>
+    <aura:attribute name="surveyInvitationLink" type="String" />
+    <aura:attribute name="generateText" type="String" default="Create Survey Link"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div class="slds-card">
+        <aura:if isTrue="{!v.surveyInvitationLink == null}">
+            <div class="slds-p-around_x-small">
+                <lightning:select name="surveySelect" label="Select survey" value="{!v.surveyId}"  onchange="{!c.onSurveyChange}">
+                    <option value="">-- SELECT SURVEY --</option>
+                    <aura:iteration items="{!v.surveyList}" var="survey">
+                           <option value="{!survey.Id}" selected="{!survey.Id == v.surveyId}">{!survey.Name}</option>
+                   </aura:iteration>
+                </lightning:select>
+                <div class="slds-align_absolute-center slds-p-top_x-small">
+                  <lightning:button variant="brand" label="{!v.generateText}" onclick="{!c.generateSurvey}" />
+                </div>
+            </div>
+        </aura:if>
+        
+        <aura:if isTrue="{!v.surveyInvitationLink != null}">
+            <div class="slds-p-around_x-small">
+              Survey Link: 
+              <a href="{!v.surveyInvitationLink}" target="_blank">{!v.surveyName}</a>
+            </div>
+        </aura:if>
+        
+    </div>
+</aura:component>
