@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Program_Enrollment_Record_Page3</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Participant</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Program Enrollments</relationshipLabel>
+        <relationshipName>Program_Enrollments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Date_of_Enrollment__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Enrollment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Issues__c</fullName>
+        <externalId>false</externalId>
+        <label>Issues</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Academic Issues</fullName>
+                    <default>false</default>
+                    <label>Academic Issues</label>
+                </value>
+                <value>
+                    <fullName>Acculturation Issues</fullName>
+                    <default>false</default>
+                    <label>Acculturation Issues</label>
+                </value>
+                <value>
+                    <fullName>Antisocial Romantic Partner</fullName>
+                    <default>false</default>
+                    <label>Antisocial Romantic Partner</label>
+                </value>
+                <value>
+                    <fullName>Anxiety</fullName>
+                    <default>false</default>
+                    <label>Anxiety</label>
+                </value>
+                <value>
+                    <fullName>Arrests of other Siblings</fullName>
+                    <default>false</default>
+                    <label>Arrests of other Siblings</label>
+                </value>
+                <value>
+                    <fullName>Basic needs/economic stress</fullName>
+                    <default>false</default>
+                    <label>Basic needs/economic stress</label>
+                </value>
+                <value>
+                    <fullName>Being in a new sexual relationship</fullName>
+                    <default>false</default>
+                    <label>Being in a new sexual relationship</label>
+                </value>
+                <value>
+                    <fullName>Being sexually active</fullName>
+                    <default>false</default>
+                    <label>Being sexually active</label>
+                </value>
+                <value>
+                    <fullName>Chronic truancy/absenteeism</fullName>
+                    <default>false</default>
+                    <label>Chronic truancy/absenteeism</label>
+                </value>
+                <value>
+                    <fullName>Communities with large teen pregnancy rates</fullName>
+                    <default>false</default>
+                    <label>Communities with large teen pregnancy rates</label>
+                </value>
+                <value>
+                    <fullName>Dating at an early age</fullName>
+                    <default>false</default>
+                    <label>Dating at an early age</label>
+                </value>
+                <value>
+                    <fullName>Dating different partners more frequently</fullName>
+                    <default>false</default>
+                    <label>Dating different partners more frequently</label>
+                </value>
+                <value>
+                    <fullName>Depression</fullName>
+                    <default>false</default>
+                    <label>Depression</label>
+                </value>
+                <value>
+                    <fullName>Domestic violence in household</fullName>
+                    <default>false</default>
+                    <label>Domestic violence in household</label>
+                </value>
+                <value>
+                    <fullName>Drug or alcohol use</fullName>
+                    <default>false</default>
+                    <label>Drug or alcohol use</label>
+                </value>
+                <value>
+                    <fullName>Early onset of puberty/physical maturity</fullName>
+                    <default>false</default>
+                    <label>Early onset of puberty/physical maturity</label>
+                </value>
+                <value>
+                    <fullName>Recreation</fullName>
+                    <default>false</default>
+                    <label>Recreation</label>
+                </value>
+                <value>
+                    <fullName>Relationship problems</fullName>
+                    <default>false</default>
+                    <label>Relationship problems</label>
+                </value>
+                <value>
+                    <fullName>Same-sex attraction or behavior</fullName>
+                    <default>false</default>
+                    <label>Same-sex attraction or behavior</label>
+                </value>
+                <value>
+                    <fullName>Self-esteem</fullName>
+                    <default>false</default>
+                    <label>Self-esteem</label>
+                </value>
+                <value>
+                    <fullName>Self-sufficiency</fullName>
+                    <default>false</default>
+                    <label>Self-sufficiency</label>
+                </value>
+                <value>
+                    <fullName>Sexual abuse</fullName>
+                    <default>false</default>
+                    <label>Sexual abuse</label>
+                </value>
+                <value>
+                    <fullName>Suicide risk</fullName>
+                    <default>false</default>
+                    <label>Suicide risk</label>
+                </value>
+                <value>
+                    <fullName>Weapons use</fullName>
+                    <default>false</default>
+                    <label>Weapons use</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PJD_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(INCLUDES(Issues__c, &apos;Suicide risk&apos;), 10, 0) + IF(INCLUDES(Issues__c, &apos;Recreation&apos;), 10, 0) + IF(INCLUDES(Issues__c, &apos;Weapons use&apos;), 10, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PJD Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Program_Profile__c</fullName>
+        <externalId>false</externalId>
+        <label>Program</label>
+        <referenceTo>Program_Profile__c</referenceTo>
+        <relationshipLabel>Program Enrollments</relationshipLabel>
+        <relationshipName>Program_Enrollments</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Program_Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Program Site</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Program_Profile__c</field>
+                <operation>equals</operation>
+                <valueField>Program_Site__c.Program_Profile__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Program_Site__c</referenceTo>
+        <relationshipLabel>Program Enrollments</relationshipLabel>
+        <relationshipName>Program_Enrollments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Staff_Person_Completing__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Staff Person Completing</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Program_Enrollments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Program Enrollment</label>
+    <nameField>
+        <label>Program Enrollment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Program Enrollments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Not_eligible</fullName>
+        <active>true</active>
+        <errorConditionFormula>PJD_Score__c  &lt; 10</errorConditionFormula>
+        <errorMessage>The participant is not eligible</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>
